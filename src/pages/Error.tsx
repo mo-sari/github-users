@@ -12,7 +12,7 @@ const Error = () => {
         alignItems="center"
         height="100vh"
         flexDirection="column"
-        bgcolor="lightblue"
+        bgcolor="#c7f1fc"
         sx={{
           m: 0,
           "& > *": {
@@ -36,7 +36,6 @@ const Error = () => {
             textTransform: "capitalize",
             fontFamily: "Outfit",
             fontSize: "20px",
-            fontWeight: "bold",
             mb: "10px",
           }}
         >
@@ -50,6 +49,7 @@ const Error = () => {
             fontFamily: "Winky Rough",
             letterSpacing: "2px",
             fontSize: "20px",
+            fontWeight: 100,
             bgcolor: "primary.light",
           }}
         >
