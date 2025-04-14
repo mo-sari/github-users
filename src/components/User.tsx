@@ -5,7 +5,7 @@ import Card from "./Card";
 const User = () => {
   return (
     <>
-      <Grid container spacing={2} alignItems="stretch">
+      <Grid container spacing={2}>
         <Grid size={{ xs: 12, sm: 6 }}>
           <Card></Card>
         </Grid>
