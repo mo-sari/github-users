@@ -5,6 +5,7 @@ import "./index.css";
 import { createTheme, ThemeProvider } from "@mui/material";
 import { store } from "./store";
 import { Provider } from "react-redux";
+import Container from "@mui/material/Container";
 
 const theme = createTheme({
   typography: {
@@ -28,7 +29,9 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <Provider store={store}>
-        <App />
+        <Container maxWidth="lg" sx={{ bgcolor: "#edf3f8" }}>
+          <App />
+        </Container>
       </Provider>
     </ThemeProvider>
   </React.StrictMode>

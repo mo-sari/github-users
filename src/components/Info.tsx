@@ -53,8 +53,8 @@ const UserInfo = () => {
       <Grid spacing={2} container flexDirection={{ xs: "column", sm: "row" }}>
         {items.map((i) => {
           return (
-            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-              <Item key={i.id} {...i} />
+            <Grid key={i.id} size={{ xs: 12, sm: 6, md: 3 }}>
+              <Item {...i} />
             </Grid>
           );
         })}
