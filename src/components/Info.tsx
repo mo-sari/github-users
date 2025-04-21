@@ -1,6 +1,6 @@
 import { useAppSelector } from "../hooks";
 
-import { ItemCart } from "../types";
+import { ItemCart } from "../types/types";
 
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";

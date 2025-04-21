@@ -2,8 +2,19 @@ import { createSlice } from "@reduxjs/toolkit";
 import mockFollowers from "./mockData.js/mockFollowers";
 import mockRepos from "./mockData.js/mockRepos";
 import mockUser from "./mockData.js/mockUser";
+import {
+  GitHubFollower,
+  GitHubRepository,
+  GitHubUser,
+} from "../types/GithubTypes";
 
-const initialState = {
+type UserState = {
+  githubUser: GitHubUser;
+  repos: GitHubRepository[];
+  followers: GitHubFollower[];
+};
+
+const initialState: UserState = {
   githubUser: mockUser,
   repos: mockRepos,
   followers: mockFollowers,

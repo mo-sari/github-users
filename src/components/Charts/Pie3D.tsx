@@ -6,7 +6,7 @@ import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 ReactFusionCharts.fcRoot(FusionCharts, Column2D, FusionTheme);
 const ReactFC = ReactFusionCharts as unknown as FC<any>;
 
-const ExampleChart = ({ data }: { data: Object[] }) => {
+const Pie3D = ({ data }: { data: Object[] }) => {
   const chartConfigs = {
     type: "pie3d",
     width: "400",
@@ -14,7 +14,7 @@ const ExampleChart = ({ data }: { data: Object[] }) => {
     dataFormat: "json",
     dataSource: {
       chart: {
-        caption: "Languages",
+        caption: "Most Used Languages",
         theme: "fusion",
         decimals: 0,
         pieRadius: "35%",
@@ -24,4 +24,4 @@ const ExampleChart = ({ data }: { data: Object[] }) => {
   };
   return <ReactFC {...chartConfigs} />;
 };
-export default ExampleChart;
+export default Pie3D;
