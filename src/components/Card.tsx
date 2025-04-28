@@ -75,6 +75,7 @@ const Card = () => {
           sx={{ color: "black" }}
           component={Link}
           to={`https://${blog}`}
+          target="_blank"
           variant="subtitle2"
         >
           <InsertLinkIcon /> {company}

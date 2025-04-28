@@ -9,8 +9,8 @@ const ReactFC = ReactFusionCharts as unknown as FC<any>;
 const Doughnut2d = ({ data }: { data: Object[] }) => {
   const chartConfigs = {
     type: "doughnut2d",
-    width: "400",
-    height: "400",
+    width: "100%",
+    height: "350",
     dataFormat: "json",
     dataSource: {
       chart: {

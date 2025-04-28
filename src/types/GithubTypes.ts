@@ -158,3 +158,21 @@ export type GitHubFollower = {
   type: string;
   site_admin: boolean;
 };
+
+export type ResourceInfo = {
+  limit: number;
+  remaining: number;
+  reset: number;
+  used: number;
+  resource: string;
+};
+
+export type RateLimitResponse = {
+  resources: {
+    core: ResourceInfo;
+    graphql: ResourceInfo;
+    integration_manifest: ResourceInfo;
+    search: ResourceInfo;
+  };
+  rate: ResourceInfo;
+};

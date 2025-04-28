@@ -9,8 +9,8 @@ const ReactFC = ReactFusionCharts as unknown as FC<any>;
 const Pie3D = ({ data }: { data: Object[] }) => {
   const chartConfigs = {
     type: "bar3d",
-    width: "400",
-    height: "400",
+    width: "100%",
+    height: "350",
     dataFormat: "json",
     dataSource: {
       chart: {

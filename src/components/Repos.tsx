@@ -1,5 +1,8 @@
 import { useAppSelector } from "../hooks";
 import { Pie3D, Doughnut2D, Column3D, Bar3D } from "./Charts";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import { Paper } from "@mui/material";
 
 type LanguageStat = {
   label: string;
@@ -75,11 +78,41 @@ const Repos = () => {
 
   return (
     <>
-      {/* <ExampleChart data={chartData} /> */}
-      <Pie3D data={mostUsed} />
-      <Column3D data={newStars} />
-      <Bar3D data={newForks} />
-      <Doughnut2D data={mostPopular} />
+      <Grid
+        container
+        spacing={2}
+        mt={2}
+        sx={{ "& .MuiPaper-root": { p: "1rem" } }}
+      >
+        <Grid size={{ xs: 12, md: 4 }}>
+          <Paper>
+            <Box>
+              <Pie3D data={mostUsed} />
+            </Box>
+          </Paper>
+        </Grid>
+        <Grid size={{ xs: 12, md: 8 }}>
+          <Paper>
+            <Box>
+              <Bar3D data={newForks} />
+            </Box>
+          </Paper>
+        </Grid>
+        <Grid size={{ xs: 12, md: 4 }}>
+          <Paper>
+            <Box>
+              <Doughnut2D data={mostPopular} />
+            </Box>
+          </Paper>
+        </Grid>
+        <Grid size={{ xs: 12, md: 8 }}>
+          <Paper>
+            <Box>
+              <Column3D data={newStars} />
+            </Box>
+          </Paper>
+        </Grid>
+      </Grid>
     </>
   );
 };
